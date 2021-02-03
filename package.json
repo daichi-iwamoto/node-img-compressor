@@ -1,0 +1,29 @@
+{
+  "name": "img-compressor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "press-w": "onchange src/img/**/*.{jpg,jpeg,png,gif,svg} -- node imagemin-w.js {{changed}}",
+    "press": "node imagemin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daichi-iwamoto/node-img-compressor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daichi-iwamoto/node-img-compressor/issues"
+  },
+  "homepage": "https://github.com/daichi-iwamoto/node-img-compressor#readme",
+  "devDependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-keep-folder": "^5.3.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
+    "onchange": "^7.1.0"
+  }
+}
